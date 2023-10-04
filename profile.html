@@ -1,0 +1,70 @@
+<?php
+
+
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+     if (!empty($_POST['user_name']) && !empty($_POST['password'])) {
+        $user_name = trim($_POST['user_name']);
+        $password = $_POST['password']; 
+        $query = "SELECT * FROM user WHERE Username =  '$user_name' LIMIT 1";
+       
+       
+        $result = mysqli_query($con, $query);
+
+        if ($result && mysqli_num_rows($result) ==1) {
+            $user_data = mysqli_fetch_assoc($result);
+
+            // Display the fetched user data and password hash for debugging
+            echo "Fetched User Data: ";
+            print_r($user_data);
+            echo "<br> entered paassword :". $_POST['password']."<br>";
+            echo "<br>Hashed Password from Database: " . $user_data['Password'] . "<br>";
+            echo " hashed_password_from_db" . $user_data['Password']."<br>";
+
+            // Password verification using password_verify()
+            if (password_verify($password , $user_data['Password'])) {
+                echo "Password is correct!";
+                echo "LOGGED IN";
+                header("Location: account.html");
+                    die;
+            } else{
+                echo "not matched";
+            } 
+        } else {
+            echo "User not found!";
+        }
+
+       
+    } else {
+        echo "Please enter username and password.";
+    }
+
+}
+    
+
+    
+                
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="profile.css">
+  <title>User Profile</title>
+</head>
+<body>
+  
+  
+  <div class="profile">
+    <img src="diana.jpeg" alt="Profile Picture">
+    <h1>User Name</h1>
+    <p>Email: user@example.com</p>
+    <p>Location: City, Country</p>
+    <button>Edit Profile</button>
+  </div>
+</body>
+</html>

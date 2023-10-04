@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dependent Select Options</title>
+    <script>
+        // JavaScript function to populate the second select based on the first select
+        function populateOptions() {
+            var firstSelect = document.getElementById("firstSelect");
+            var secondSelect = document.getElementById("secondSelect");
+
+            // Clear previous options
+            secondSelect.innerHTML = "";
+
+            // Get the selected value from the first select
+            var selectedValue = firstSelect.value;
+
+            // Populate options in the second select based on the selected value
+            if (selectedValue === "fruits") {
+                var fruits = ["Apple", "Banana", "Orange"];
+                populateSelectOptions(secondSelect, fruits);
+            } else if (selectedValue === "colors") {
+                var colors = ["Red", "Green", "Blue"];
+                populateSelectOptions(secondSelect, colors);
+            }
+        }
+
+        // Function to populate options in a select element
+        function populateSelectOptions(selectElement, optionsArray) {
+            for (var i = 0; i < optionsArray.length; i++) {
+                var option = document.createElement("option");
+                option.value = optionsArray[i];
+                option.textContent = optionsArray[i];
+                selectElement.appendChild(option);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Dependent Select Options</h2>
+    <label for="firstSelect">Select Category:</label>
+    <select id="firstSelect" onchange="populateOptions()">
+        <option value="fruits">Fruits</option>
+        <option value="colors">Colors</option>
+    </select>
+
+    <label for="secondSelect">Select Option:</label>
+    <select id="secondSelect">
+        <!-- Options will be populated dynamically based on the first select -->
+    </select>
+</body>
+</html>

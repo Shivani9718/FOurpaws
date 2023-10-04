@@ -1,0 +1,184 @@
+
+.topnav {
+    background-color:  rgb(4, 57, 4);
+    overflow: hidden;
+    height: 7%;
+    display: flex;
+    
+    justify-content: flex-end; 
+  
+
+  }
+  .topnav p{
+    color: whitesmoke;
+    margin-top: 35px;
+    float:left;
+    margin-left:-30px;
+
+    }
+  
+  .topnav h1{
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-left:-300px;
+  }
+ .topnav img{
+  height:2%;
+  width:2%;
+  margin-right:850px;
+  margin-top: 30px;
+ }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    
+    
+ 
+    margin-top: 8px;
+ 
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(29, 94, 49);
+  }
+  .image2-grid .container {
+    font-size: 20px;
+    text-align: center; /* Center the image horizontally within the container */
+    
+    
+
+
+  }
+  .image2-grid .container p{
+    margin-left: -70%;
+    font-size: 40px;;
+  }
+  .image2-grid .container img{
+    width:500px;
+    height:400px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .image2-grid   .content{
+    font-size:25px;
+     font-style:bold;
+   
+   
+    
+   list-style-type: none; /* Remove list bullet points */
+   padding: 5px; /* Remove default padding */
+   margin: 5px; /* Remove default margin */
+    
+  }
+  .content li{
+    display: inline; /* Display list items inline */
+    margin-inline: 50px;
+  }
+  .col3{
+    margin-right :80px;
+    margin-left: 150px;
+   }
+    
+   footer{
+    position: absolute;
+    display: flex;
+  
+   }
+  
+  .col3 li{
+    color: white;
+    margin-bottom: 10px;
+  }
+  .col3 p{
+    
+    color: white;
+    font-size: 15px;
+  }
+  .foot p{
+    
+    color: white;
+    font-size: 15px;
+  }
+  .foot{
+    margin-top: 3%;
+    margin-left: 10%;
+  }
+  .foot img{
+    width: 100px;
+    height: 100px;
+  }
+  .col3 img{
+    width: 100px;
+    height:100px;
+  }
+  .footer{
+    margin-top: 10%;
+    width: 100%;
+    height: 40%;
+    background-color:rgb(6, 61, 23);
+    float:right;
+  
+               
+  }
+  .col31 li{
+  color: white;
+  margin-bottom: 2px;
+  }
+  .col31 p{
+   margin-top: 8%; 
+  color: white;
+  font-size: 15px;
+  }
+  .col31 h5{
+  margin-top: 10%;
+  color: white;
+  font-size: 20px;
+  }
+  .col3 h5{
+  margin-top: 50%;
+  margin-bottom: 20%;
+  color: white;
+  font-size: 20px;
+  }
+  footer a{
+  color: white;
+  
+  margin-bottom: 20px;
+  }
+  
+  
+  .row2 {
+  color: white;
+  margin-top: 20px;
+  margin-left:100px;
+  
+  }
+  .row2 h5{
+  margin-top: 5%;
+  color:white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  
+  }
+  .row2 img{
+  height: 50px;
+  width: 50px;
+  padding:10px;
+  margin-top: 50px;
+  }
+  .adopt img{
+  
+ 
+    width: 90%;
+    margin-left:80px;
+    
+  
+  }

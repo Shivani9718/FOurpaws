@@ -1,0 +1,141 @@
+
+
+.adopt img{
+  width: 60%;
+  margin-left:80px;
+
+}
+.main{
+  float:right;
+  float:3;
+ padding-right:370px;
+ margin-top: 80px;
+}
+.main p{
+  margin-left: 80px;
+  margin-top:5px;
+  color:rgb(121, 109, 109);
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Navigation{
+ 
+  float:left;
+
+  flex:0.5;
+  box-sizing: content-box;
+  width: 100px;
+  height: 300px;
+  padding: 10px;
+  border: 2px  black;
+  margin: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 80px;
+}
+ .Navigation .label{
+  display: block;
+  margin-bottom: 0.5px;
+  font-size: 20px;
+}
+.Navigation select {
+  width: 90%; /* Make the select element fill the width of its container */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.Navigation button {
+  width:90%;
+  padding: 12px 20px;
+  font-size: 10px;
+  background-color: #155228;
+  font-size: 15px;
+  color:white;
+ 
+}
+
+.topnav a {
+  
+    margin-top: -40px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 8px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+ 
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(29, 94, 49);
+}
+.top {
+    overflow: hidden;
+  background-image:url(sear.jpg);
+  height:300px; 
+}
+.top p{
+  color:white;
+  text-align: center;
+  font-size:80px;
+}
+
+/* Style the search box inside the navigation bar */
+.top input[type=text] {
+  margin-left:30%;
+  padding: 10px;
+  border:black;
+  margin-top: 20px;
+  width:50%;
+  margin-right: 16px;
+  font-size: 25px;
+ display:inline;
+}
+.top button{
+  background-color: white;
+  
+  width:80px;
+  height:30px;
+}
+.image2-grid{
+    
+ display:grid;
+    grid-template-columns: repeat(3, 1fr);
+     gap:15px;
+   
+    background-color: white;
+    gap:25px;
+    margin:55px;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+     width: 300px;
+     height:300px;
+     
+   }
+  .image2-grid .container img{
+    height:150px;
+    width:200px;
+   }
+   
+   .section{
+    display:flex;
+   
+   }
+
+
+.image2-grid .container{
+   
+   
+box-shadow:2px 5px 2px black;
+border-radius:5px;
+margin-right:80px;
+background:white;
+text-align:center;
+padding:20px 20px;
+margin-block:10px;
+flex: 40.33%;
+padding: 35px;
+
+}

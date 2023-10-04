@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="FAQs.css">
+    </head>
+</html>
+<body>
+  <div class="bg-img">
+    <h1>FAQS</h1>
+    <div class="faqs">
+    
+    
+   <button class="accordion">Why should i adopt a pet?</button>
+<div class="panel">
+  <p> Did you know that over 2000 people per hour in India run a search right here looking to adopt a pet? 
+    Pet adoption is becoming the preferred way to find a new pet. Adoption will always be more convenient than buying a 
+    puppy for sale from a pet shop or finding a kitten for sale from a litter. Pet adoption brings less stress and 
+    more savings! So what are you waiting for? Go find that perfect pet for home!</p>
+</div>
+
+<button class="accordion">What is the fee to adopt a pet?</button>
+<div class="panel">
+  <p>No, there is no fee for pet adoption on FourPaws. However, if you adopt from a different city pet owner/rescuer 
+    can ask for travel charges. In case if you find someone asking for charges you can write us at  FourPaws@gmail.com</a></a></p>
+</div>
+
+<button class="accordion">How old do I need to be to adopt a pet?</button>
+<div class="panel">
+  <p>You need to be at least 18+ years old to adopt</p>
+</div>
+<button class="accordion">Can you return an adopted pet?</button>
+<div class="panel">
+  <p>
+    <p>
+      We understand it can be hard to get an adjusted pet in the new home and vice versa, as long as your reason for returning is reasonable, you'll be welcome to put it up for adoption again</p>
+</div>
+</div>
+</div>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+</body>
+
+</html>

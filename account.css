@@ -1,0 +1,213 @@
+h1{
+  font-size: 80px;
+  text-align: center;
+  color:rgb(159, 52, 52);
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.topnav {
+  background-color: #221a68;
+  overflow: hidden;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: blue;
+}
+
+
+  .column{
+    margin-top:5%;
+    width :33.33%;
+    float:left;
+    padding: 5px;
+    
+}
+.row::after{
+    content: "";
+    clear :both;
+    display:table;
+    
+}
+.banner-link .b1{
+    margin-top: auto;
+  
+  }
+  p{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(152, 30, 30);
+  }
+  .banner-link button{
+       
+    height: 60px;
+    width: 125px;
+    margin-top: 10%;
+    background-color:rgb(25, 25, 101);
+   
+   border-block-end-style: 5px solid  20px;
+     display:inline-block;
+     border-radius: 0cm;
+      border: 4px solid white;
+      padding: 5px 5px;
+      font-size: 15px;
+      font-weight: 600;
+      color:white;
+        cursor: pointer;
+        box-shadow: white;
+  } 
+  .banner-link button:hover{
+    color: white;
+  box-shadow: 0 0 50px 0 rgb(182, 182, 250);
+  }
+    .column img{   
+    height: 200px;
+    width: 200px;
+}
+*{
+    box-sizing:border-box;
+
+}
+
+footer{
+  position: absolute;
+  display: flex;
+
+ }
+
+.col3 li{
+  color: white;
+  margin-bottom: 10px;
+}
+.col3 p{
+  
+  color: white;
+  font-size: 15px;
+}
+.foot p{
+  
+  color: white;
+  font-size: 15px;
+}
+.foot{
+  margin-top: 3%;
+  margin-left: 10%;
+}
+.foot img{
+  width: 100px;
+  height: 100px;
+}
+.col3{
+  margin-left: 80px;
+}
+
+.footer{
+  margin-top: 10%;
+  width: 110%;
+  
+  height: 40%;
+  background-color:rgb(3, 3, 75);
+
+             
+}
+.col31 li{
+color: white;
+margin-bottom: 2px;
+}
+.col31{
+margin-left: 80px;
+}
+.col31 p{
+ margin-top: 8%; 
+color: white;
+font-size: 15px;
+}
+.col31 h5{
+margin-top: 10%;
+color: white;
+font-size: 20px;
+margin-left: 45%;
+}
+.col3 h5{
+margin-top: 50%;
+margin-bottom: 20%;
+color: white;
+font-size: 20px;
+}
+.row2 img{
+  height: 20%;
+  margin-top: 10%;
+
+}
+.row2 p{
+  color: white;
+  font-size: 20px;
+  margin-top: 2%;
+}
+.row2{
+  margin-left: 200px;
+}
+.row2 h5{
+  color:white;
+  font-size: 20px;
+}
+.row2 li{
+  color: white;
+  margin-bottom: 2px;
+  }
+footer a{
+color: white;
+
+margin-bottom: 20px;
+}

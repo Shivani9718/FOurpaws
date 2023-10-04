@@ -1,0 +1,62 @@
+.bg-img {
+  /* The image used */
+  background-image: url("wallpaper.jpg");
+
+  /* Control the height of the image */
+  min-height: 150%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.accordion {
+    background-color:rgb(5, 5, 70);
+     color:white;
+     cursor: pointer;
+     padding: 18px;
+     width: 100%;
+     text-align: left;
+     border: none;
+     border-color: pink;
+     outline: none;
+     transition: 0.4s;
+     font-size: 16px;
+   }
+  .faqs{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+   .accordion:hover {
+    background-color: pink;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  .adv p{
+    margin-left: 50%;
+  color:white;
+  }
+  h1{
+    color:white;
+  }
